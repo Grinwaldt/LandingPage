@@ -27,22 +27,24 @@ select,
 textarea {
     /*max-width: 280px;*/
 }
-.header-img{
-    width:100%;
+
+.header-img {
+    width: 100%;
 }
+
 .content {
     width: 43%;
     margin-right: 28.5%;
     margin-left: 28.5%;
     vertical-align: middle;
-    font-family: Rubik;
+    font-family: Rubik,sans-serif;
 }
 
 .recipe {
     color: #09428f;
     vertical-align: middle;
     float: right;
-    font-family: Rubik;
+    font-family: Rubik,sans-serif;
     line-height: initial;
 }
 
@@ -50,13 +52,13 @@ textarea {
     font-weight: bold;
     margin: 0px;
     font-size: 21px;
-    font-family: rubik;
+    font-family: rubik,sans-serif;
 }
 
 .name-creator {
     font-weight: bold;
     font-size: 15px;
-    font-family: Rubik;
+    font-family: Rubik,sans-serif;
 }
 
 .details-recipe {
@@ -67,13 +69,13 @@ textarea {
         color: purple;
         font-weight: bold;
         font-size: 18px;
-        font-family: Rubik;
+        font-family: Rubik,sans-serif;
     }
 
 .beteavon {
     float: left;
     font-size: 29px;
-    font-family: Rubik;
+    font-family: Rubik,sans-serif;
     font-weight: bold;
 }
 
@@ -81,20 +83,28 @@ textarea {
     /*background-image: url('Images/pic.jpg');*/
 }
 
+.bottom-right {
+    position: absolute;
+    bottom: 0%;
+    font-family: Rubik,sans-serif;
+    color: #09428f;
+    left: 65%;
+}
+
 .delicates {
     font-weight: bold;
     font-size: 25px;
-    font-family: Rubik;
+    font-family: Rubik,sans-serif;
 }
 
 .form {
     background-color: #09428f;
     height: 30%;
     color: white;
-    font-family: Rubik;
+    font-family: Rubik !important, sans-serif;
     width: 98%;
     margin-left: 2%;
-        margin-top: 1%;
+    margin-top: 1%;
 }
 
 .form-content {
@@ -115,15 +125,17 @@ textarea {
     height: 35px;
     max-width: none;
     width: 100%;
-    font-family: Rubik;
+    font-family: Rubik !important, sans-serif;
     font-weight: bold;
     font-size: 26px;
+    text-align: center !important;
 }
 
 .input-data {
     margin-bottom: 1%;
     margin-left: 2%;
     width: 47%;
+    font-size: 17px !important;
 }
 
 .checkbox-style {
@@ -134,39 +146,44 @@ textarea {
     background-color: purple;
     margin-left: 3%;
 }
-#form{
-    display:grid;
-  }
-#success{
-    display:none;
+
+#form {
+    display: grid;
 }
+
+#success {
+    display: none;
+}
+
 .footer-style {
-        width: 100%;
+    width: 100%;
     background-image: url('Images/footerBackground.png');
 }
-.contentSuccess{
-    margin-top:3%;
-    margin-bottom:3%;
+
+.contentSuccess {
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
+
 .v {
     padding-left: 45%;
 }
 
 .ans-title {
     text-align: center;
-    font-family: Rubik;
+    font-family: Rubik !important,sans-serif;
     font-weight: bold;
     font-size: 39px;
 }
 
 .ans-sub-title {
     text-align: center;
-    font-family: Rubik;
+    font-family: Rubik !important,sans-serif;
     font-size: 25px;
 }
 
 .logo {
-    margin-left: 30%;
+    margin-left: 30% !important;
 }
 
 nav-footer {
