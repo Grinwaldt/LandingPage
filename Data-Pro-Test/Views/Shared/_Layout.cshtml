@@ -9,101 +9,7 @@
 
 </head>
 <body>
-    <div>
-        <img class="header-img" src="~/Content/Images/header.jpg" />
-    </div>
-    <div class="row">
-        <div class="container content">
-            <div class="col-md-6 recipe" id="title" dir="rtl">
-                <span class="name-recipe">דפי אורז ממולאים בסלק וגבינת פטה</span>
-                <br />
-                <lable class="name-creator" id="subtitle">של אניה רויטפלד, דיאטנית במחוז השרון</lable>
-                <br /><br />
-                <p id="content" class="details-recipe">
-                    <span>  מצרכים ל - 4 מנות</span>
-                    <br />
-                    סלקים גדולים מבושלים וחתוכים לקוביות או מגורדים
-                    <br />
-                    150 גרם גבינת פטה פיראוס 5% חתוכה לקוביות
-                    <br />
-                    40 גרם אגוזי מלך קצוצים / צנוברים
-                    <br />
-                    8 דפי אורז
-                    <br /><br />
-                    <span> אופן ההכנה</span>
-                    <br />
-                    מערבבים את המלית )סלק, פטה ואגוזים(.
-                    <br />
-                    •טובלים את דפי האורז במים ומייבשים על מגבת מטבח.
-                    <br />
-                    •מניחים במרכז כל דף 1-2 כפיות מהמלית.
-                    <br />
-                    •מגלגלים את הדפים (כמו בלינצ'ס).
-                    <br />
-                    •מגישים עם רוטב לבחירה – סויה, טריאקי, צ'ילי...
-                    <br /><br />
-                    <span>  ערכים תזונתיים למנה</span>
-                    <br />
-                    55 קלוריות | 10 גרם פחמימות | 9 גרם שומן
-                    <br />
-                    680 גרם נתרן | 1 גרם סיבים
-                    <br />
-                    <lable class="beteavon" dir="ltr">!בתאבון</lable>
-                </p>
-            </div>
-
-            <div class="col-md-6 img-recipe" id="img">
-                <img src="~/Content/Images/pic.jpg" />
-                <div class="bottom-right">התמונה להמחשה</div>
-            </div>
-            <div class="raw">
-                <form id="form" class="col-md-10 form" name="form" typeof="subbmit">
-                    @*onsubmit="return getSuccses()"*@
-                    <div id="formContent" class="form-content" dir="rtl">
-                        <div class="form-title">
-                            <h3>רוצים עוד מתכונים בריאים לשבועות?</h3>
-                            <h4>לקבלת חוברת המתכונים הדיגיטלית שלנו השאירו פרטים:</h4>
-                        </div>
-                        <div>
-                            <div>
-                                <input class="input-data" id="name" type="text" placeholder="שם מלא:" />
-                                <input class="input-data" id="email" type="text" placeholder="מייל:" />
-                            </div>
-                            <div>
-                                <input class="input-data" id="phone" type="tel" placeholder="טלפון:" />
-                                <input class="input-data" id="city" type="text" placeholder="עיר:" />
-                            </div>
-                        </div>
-                        <div class="checkbox-style">
-                            <div>
-                                <input id="friend" type="checkbox" />
-                                <label for="scales">אני חבר/ת מכבי</label>
-                            </div>
-                            <div>
-                                <input id="getPost" type="checkbox" checked />
-                                <label for="scales">אני מאשר קבלת דיוור ו/או חומר פרסומי ממכבי שירותי בריאות</label>
-                            </div>
-                        </div>
-                        <div class="div-btn">
-                            <input id="submitEmail" class="submmit" style="text-align: center !important" value="שילחו את החוברת >>" />
-                        </div>
-                    </div>
-                </form>
-                <div id="success" class="col-md-10 form">
-                    <div class="contentSuccess">
-                        <img class="v" src="~/Content/Images/v.png" />
-                        <div class="ans-title">תודה פנייתך התקבלה </div>
-                        <div class="ans-sub-title">! החוברת תשלח אליך בהקדם</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <footer class="nav-footer footer-style">
-        <img class="logo" src="~/Content/Images/logo.png" />
-    </footer>
+    
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
@@ -111,6 +17,8 @@
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/email-form/email-form.js"></script>
+    <a href="~/Views/Recipes/Index.html"></a>
+    <script></script>
 </body>
 
 </html>
