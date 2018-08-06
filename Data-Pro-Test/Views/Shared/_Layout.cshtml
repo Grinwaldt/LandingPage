@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div >
+    <div>
         <img class="header-img" src="~/Content/Images/header.jpg" />
     </div>
     <div class="row">
@@ -54,9 +54,10 @@
 
             <div class="col-md-6 img-recipe" id="img">
                 <img src="~/Content/Images/pic.jpg" />
+                <div class="bottom-right">התמונה להמחשה</div>
             </div>
             <div class="raw">
-                <form id="form"  class="col-md-10 form" name="form" typeof="subbmit" >
+                <form id="form" class="col-md-10 form" name="form" typeof="subbmit">
                     @*onsubmit="return getSuccses()"*@
                     <div id="formContent" class="form-content" dir="rtl">
                         <div class="form-title">
@@ -83,11 +84,13 @@
                                 <label for="scales">אני מאשר קבלת דיוור ו/או חומר פרסומי ממכבי שירותי בריאות</label>
                             </div>
                         </div>
-                        <div class="div-btn"><input id="submitEmail" class="submmit" value="שילחו את החוברת >>"   /></div>
+                        <div class="div-btn">
+                            <input id="submitEmail" class="submmit" style="text-align: center !important" value="שילחו את החוברת >>" />
+                        </div>
                     </div>
                 </form>
-                <div id="success" class="col-md-10 form"  >
-                    <div class="contentSuccess" >
+                <div id="success" class="col-md-10 form">
+                    <div class="contentSuccess">
                         <img class="v" src="~/Content/Images/v.png" />
                         <div class="ans-title">תודה פנייתך התקבלה </div>
                         <div class="ans-sub-title">! החוברת תשלח אליך בהקדם</div>
@@ -107,41 +110,7 @@
     @RenderSection("scripts", required: false)
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            $('#submitEmail').click(function () {
-                $("#form").remove();
-                $('#success').show();
-
-                var phone = document.getElementById("phone").value;
-                var email = document.getElementById("email").value;
-                var name = document.getElementById("name").value;
-                var city = document.getElementById("city").value;
-                var friend = document.getElementById("friend").value;
-
-                $.ajax({
-                    type: "POST",
-                    url: "/Home/sendEmail",
-                    data:    {name: name,phone:phone,email:email,city:city} ,
-
-                    contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-
-                    success: function (response) {
-                        console.log("submit")
-                    },
-                    failure: function (response) {
-                        alert(response.responseText);
-                    },
-                    error: function (response) {
-                        alert(response.responseText);
-                    }
-                });
-       
-            });
-        });
-    </script>
+    <script src="~/Scripts/myJavaScript.js"></script>
 </body>
 
 </html>

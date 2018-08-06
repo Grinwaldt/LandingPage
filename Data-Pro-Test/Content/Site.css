@@ -80,7 +80,6 @@ textarea {
 }
 
 .img-recipe {
-    /*background-image: url('Images/pic.jpg');*/
 }
 
 .bottom-right {
@@ -88,7 +87,7 @@ textarea {
     bottom: 0%;
     font-family: Rubik,sans-serif;
     color: #09428f;
-    left: 65%;
+    left: 75%;
 }
 
 .delicates {
