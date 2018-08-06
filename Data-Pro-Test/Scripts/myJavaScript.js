@@ -4,11 +4,11 @@
         $("#form").remove();
         $('#success').show();
 
-        var phone = document.getElementById("phone").value;
-        var email = document.getElementById("email").value;
-        var name = document.getElementById("name").value;
-        var city = document.getElementById("city").value;
-        var friend = document.getElementById("friend").value;
+        var phone = document.getElementById("phone").value();
+        var email = document.getElementById("email").value();
+        var name = document.getElementById("name").value();
+        var city = document.getElementById("city").value();
+        var friend = document.getElementById("friend").value();
 
         $.ajax({
             type: "POST",
