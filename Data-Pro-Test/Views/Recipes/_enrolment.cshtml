@@ -1,0 +1,45 @@
+﻿
+<div class="raw">
+    <form id="form" class="col-md-10 form" name="form" typeof="subbmit">
+        @*onsubmit="return getSuccses()"*@
+        <div id="formContent" class="form-content" dir="rtl">
+            <div class="form-title">
+                <h3>רוצים עוד מתכונים בריאים לשבועות?</h3>
+                <h4>לקבלת חוברת המתכונים הדיגיטלית שלנו השאירו פרטים:</h4>
+            </div>
+            <div>
+                <div>
+                    <input class="input-data" id="name" type="text" placeholder="שם מלא:" />
+                    <input class="input-data" id="email" type="text" placeholder="מייל:" />
+                </div>
+                <div>
+                    <input class="input-data" id="phone" type="tel" placeholder="טלפון:" />
+                    <input class="input-data" id="city" type="text" placeholder="עיר:" />
+                </div>
+            </div>
+            <div class="checkbox-style">
+                <div>
+                    <input id="friend" type="checkbox" />
+                    <label for="scales">אני חבר/ת מכבי</label>
+                </div>
+                <div>
+                    <input id="getPost" type="checkbox" checked />
+                    <label for="scales">אני מאשר קבלת דיוור ו/או חומר פרסומי ממכבי שירותי בריאות</label>
+                </div>
+            </div>
+            <div class="div-btn">
+                <input id="submitEmail" class="submmit" style="text-align: center !important" value="שילחו את החוברת >>" />
+            </div>
+        </div>
+    </form>
+    <div id="success" class="col-md-10 form">
+        <div class="contentSuccess">
+            <img class="v" src="~/Content/Images/v.png" />
+            <div class="ans-title">תודה פנייתך התקבלה </div>
+            <div class="ans-sub-title">! החוברת תשלח אליך בהקדם</div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>

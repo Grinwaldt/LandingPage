@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <img class="header-img" src="~/Content/Images/header.jpg" />
+</div>
+<div class="row">
+    <div class="container content">
+        @RenderPage("~/Views/Recipes/_receipt.cshtml")
+
+        @RenderPage("~/Views/Recipes/_enrolment.cshtml")
+
+        @*<partial name="~/Views/Recipes/_receipt.cshtml" />
+        <partial name="~/Views/Recipes/_enrolment.cshtml" />*@
+    </div>
+</div>
+
+<footer class="nav-footer footer-style">
+    <img class="logo" src="~/Content/Images/logo.png" />
+</footer>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+<body>
+    @RenderBody()
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @*@RenderSection("scripts", required: false)*@
+
+
+    <script src="~/email-form/email-form.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    </body>
