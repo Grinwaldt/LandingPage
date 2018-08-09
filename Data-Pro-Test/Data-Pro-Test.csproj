@@ -193,7 +193,6 @@
     <Content Include="Content\Images\pic.jpg" />
     <Content Include="Content\Images\v.png" />
     <Content Include="Scripts\email-form.js" />
-    <Content Include="Views\Recipes\Index.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

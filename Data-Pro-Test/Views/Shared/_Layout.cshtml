@@ -9,12 +9,23 @@
 
 </head>
 <body>
+    <div>
+        <img class="header-img" src="~/Content/Images/header.jpg" />
+    </div>
+
+    @RenderPage("~/Views/Recipes/Index.cshtml")
+
+    <footer class="nav-footer footer-style">
+        <img class="logo" src="~/Content/Images/logo.png" />
+    </footer>
+
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-  
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/email-form.js"></script>
 
 </body>
-
 </html>
