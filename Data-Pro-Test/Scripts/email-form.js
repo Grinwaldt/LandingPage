@@ -2,26 +2,27 @@
 $(document).ready(function () {
 
     $('#submitEmail').click(function () {
-        $("#form").remove();
-        $('#success').show();
+     
 
-        var phone = $("#phone").value();
+        var phone = $('#phone').val();
 
-        var email = $("#email").value();
+        var email = $("#email").val();
 
-        var name = $("#name").value();
+        var name = $("#name").val();
 
-        var city = $("#city").value();
+        var city = $("#city").val();
 
-        var phone = $("#phone").value();
+        var friend = $("#friend").val();
 
-        var friend = $("#friend").value();
+        var getPost = $("#friend").val();
+
 
 
         $.ajax({
             type: "POST",
-            url: "/Home/sendEmail",
-            data: { name: name, phone: phone, email: email, city: city },
+            url: "/Recipes/sendEmail",
+            
+            data: "{ 'name': 'name', 'phone': 'phone', 'email': 'email', 'city': 'city', 'getPost': 'getPost', 'friend': 'friend' }",
 
             contentType: "application/json; charset=utf-8",
             dataType: "json",
@@ -36,6 +37,8 @@ $(document).ready(function () {
                 alert(response.responseText);
             }
         });
+        //$("#form").remove();
+        //$('#success').show();
 
     });
 });

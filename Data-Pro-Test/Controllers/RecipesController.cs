@@ -89,7 +89,7 @@ namespace Data_Pro_Test.Controllers
         }
 
         [HttpPost]
-        public ActionResult sendEmail(string name, string phone, string email, string city)
+        public ActionResult sendEmail(string name, string phone, string email, string city, string getPost, string friend)
         {
 
             //string smtpAddress = "smtp.gmail.com";
